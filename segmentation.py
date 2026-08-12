@@ -8,6 +8,9 @@ from sklearn.cluster import KMeans
 import datetime
 
 def main():
+    # Ensure output directories exist
+    os.makedirs('outputs/figures', exist_ok=True)
+    
     print("Step 1: Loading the dataset...")
     # Path to the dataset
     data_path = 'data/online_retail_II.xlsx'
